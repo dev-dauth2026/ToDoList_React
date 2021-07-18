@@ -13,7 +13,7 @@ const App=()=> {
     setItems((oldItems)=>{
         return [...oldItems,inputList]
     })
-    setItems('');
+    setInputList('');
   }
   const deleteItems=(id)=>{
     setItems((oldItems)=>{
@@ -29,7 +29,7 @@ const App=()=> {
       <div className="main_div">
         <div className="center_div">
           <h1>ToDo List</h1>
-          <input type="text" placeholder="Add an item" onChange={inputEvent} value={inputList} />
+          <input type="text" name="text" placeholder="Add an item" onChange={inputEvent} value={inputList} />
           <button onClick={ListItems} >+</button>
           <ul>
             {/* <li>{inputList} </li> */}
