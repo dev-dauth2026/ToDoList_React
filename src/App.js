@@ -29,7 +29,7 @@ const App=()=> {
       <div className="main_div">
         <div className="center_div">
           <h1>ToDo List</h1>
-          <input type="text" name="text" placeholder="Add an item" onChange={inputEvent} value={inputList} />
+          <input type="text" name="text" placeholder="Add an item" autoComplete="off" onChange={inputEvent} value={inputList} />
           <button onClick={ListItems} >+</button>
           <ul>
             {/* <li>{inputList} </li> */}
